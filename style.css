@@ -1,0 +1,85 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  background-color: lightgrey;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+nav {
+  width: 100vw;
+  height: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.content {
+  margin: 1rem 1rem;
+}
+
+.button {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  box-shadow: 0 3px purple, 2px 3px grey, 0 0 0 1px white;
+}
+
+.button:hover {
+  background: linear-gradient(145deg, #743ad5, purple 55%);
+  color: white;
+  box-shadow: 0 0 0 0;
+}
+
+.sub-button {
+  padding-top: 1.5rem;
+  line-height: 1.5;
+}
+
+.sub-button a {
+  background: linear-gradient(
+      to right,
+      transparent 0%,
+      transparent 20%,
+      purple 70%,
+      purple 100%
+    )
+    1px 100% transparent no-repeat;
+  background-size: 100% 1px;
+  padding-bottom: 0.3rem;
+  margin-right: 0.5rem;
+}
+
+.sub-button a:hover {
+  color: purple;
+  background: linear-gradient(
+      to right,
+      purple 1%,
+      purple 20%,
+      purple 70%,
+      purple 100%
+    )
+    1px 100% transparent no-repeat;
+  background-size: 100% 1px;
+  padding-bottom: 0.3rem;
+  margin-right: 0.5rem;
+}
